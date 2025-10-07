@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosultas</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header>
+        <!-- logo-->
+        <h1><a href="../../index.html"><img class= logo src="../../media/logo.png" alt="Mi Turno"></a></h1>
+        <!-- barra de navegacion-->
+        <nav>
+            <ul>
+                <li><a href="../servicios.html">Servicios</a></li>
+                <li><a href="../precios.html">Precios</a></li>
+                <li><a href="../salones.html">Salones</a></li>
+                <li><a href="../mi-cuenta.html">Mi Cuenta</a></li>            
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="/submit" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido">
+
+            <label for="telefono">Nro. de telefono</label>
+            <input type="tel" name="telefono" id="telefono">
+
+            <label for="localidad">Localidad</label>
+            <input type="text" name="localidad" id="localidad">
+
+            <label for="mail">Mail</label>
+            <input type="email" name="mail" id="mail">
+
+            <label for="consulta">Escriba su consulta</label>
+            <textarea name="consulta" id="consulta"></textarea>
+
+            <input type="button" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <div class="logo-footer">
+            <a href="../../index.html"><img src="../../media/logo.png" alt="logo"></a>
+            <img src="../../media/descargar-footer.PNG" alt="Descargar App">
+        </div>
+        <div class="categoria">
+            <ul>
+                <li>
+                    <h3>Acerca de</h3>
+                    <ul>
+                        <li><a href="./trabajo.html">Trabaja con nosotros</a></li>
+                        <li><a href="">Como usar</a></li>
+                        <li><a href="./acerca-de.html">Nosotros</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>Informacion legal</h3>
+                    <ul>
+                        <li><a href="./informacion-legal.html">Politicas de privacidad</a></li>
+                        <li><a href="./informacion-legal.html">Terminos y condiciones</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><a href="./atencion-al-cliente.html">Atencion al cliente</a></li>
+                        <li><a href="#">Dejanos tu consulta</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

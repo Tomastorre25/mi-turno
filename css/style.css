@@ -1,0 +1,234 @@
+/* RESET */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------ HEADER ------*/
+
+.navbar{
+    background-color: #2129a5;
+}
+
+.navbar img{
+    padding-left: 1.5rem;
+}
+
+/*------ BODY ------*/
+
+.container{
+    padding: 40px;
+}
+
+/*------ FOOTER ------*/
+
+footer{
+    background-color: #2129a5;
+    height: 10rem;
+    font-size: 15px;
+}
+
+footer h3{
+    font-size: 21px;
+}
+
+footer section{
+    padding-top: 1.5rem;
+}
+
+.logo-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.logo-footer img{
+    width: 10rem;
+}
+
+.categoria{
+    color: #fff;
+}
+
+.categoria ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*------ INICIO ------*/
+/* DESTACADOS */
+
+.destacados{
+    text-align: center;
+}
+
+.carousel-item{
+    height: 600px;
+}
+
+.carrousel-item img{
+    object-fit:scale-down;
+}
+
+/* DESCARGAR APP */
+
+.descargar-app{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-bottom: 40px;
+}
+
+/* INFORMACION */
+
+.informacion{
+    display: flex;
+    align-items: center;
+}
+
+.informacion img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.texto{
+    padding: 25px;
+}
+
+.muestra2{display: flex;
+    flex-direction: row-reverse;
+}
+
+/* TESTIMONIOS */
+
+.testimonios h2{
+    text-align: center;
+}
+
+
+
+/*------ SERVICIOS ------*/
+
+.servicios{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+}
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.icono{
+    display: flex;
+    justify-content: center;
+}
+
+.icono img{
+    width:200px;
+}
+
+/*------ PRECIOS ------*/
+
+/*------ SALONES ------*/
+
+
+.salones{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+.salones img{
+    border-radius: 5px;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mapa{
+    display: flex;
+    justify-content: end;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 1000%;
+}
+
+.contenido{
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contenido ul{
+    padding: 0;
+    list-style: none;
+}
+
+/*------ MI CUENTA ------*/
+
+.perfil{
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    font-size: 16px;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.perfil img{
+    width: 180px;
+    height: 180px;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos h2{
+    font-weight: bold;
+}
+
+/* BOTON */
+
+.editar-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-editar-perfil{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 3px;
+    color: #fff;
+}
+
+/* HISTORIAL DE TURNOS */
+
