@@ -64,7 +64,12 @@ footer a{
 }
 
 /*------ INICIO ------*/
+
 /* DESTACADOS */
+
+.destacados{
+    margin-top: 2rem;
+}
 
 .destacados{
     text-align: center;
@@ -75,7 +80,9 @@ footer a{
 }
 
 .carrousel-item img{
-    object-fit:scale-down;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* DESCARGAR APP */
@@ -89,9 +96,14 @@ footer a{
 
 /* INFORMACION */
 
+@media (min-width: 960px){
 .informacion{
     display: flex;
-    align-items: center;
+    align-items: center;}
+
+    .muestra2{display: flex;
+    flex-direction: row-reverse;
+}
 }
 
 .informacion img{
@@ -103,8 +115,8 @@ footer a{
     padding: 25px;
 }
 
-.muestra2{display: flex;
-    flex-direction: row-reverse;
+.texto p{
+    margin: 0;
 }
 
 /* TESTIMONIOS */
@@ -135,6 +147,71 @@ footer a{
 
 .icono img{
     width:200px;
+}
+
+/*------ MOBILE ------*/
+
+@media (max-width: 576px) {
+
+    /* FOOTER */
+
+    .logo-footer{
+        display: flex;
+        justify-content: start;
+        padding: 0.5rem;
+    }
+
+    .logo-footer img{
+        max-width: 100px;
+    }
+
+    .categoria h3{
+        font-size: 12px;
+    }
+
+    .categoria{
+        font-size: 10px;
+    }
+
+    /* INICIO */
+    .carousel-item img {
+    height: 250px;}
+
+    .carousel-item{
+        height: auto;
+    }
+
+    .destacados{
+        padding: 20px;
+        margin-top: 60px;
+    }
+
+    .descargar-app{
+        padding: 0;
+        margin: 0;
+    }
+
+    .descargar-app img{
+        max-width: 250px;
+    }
+
+    .carousel-caption{
+        padding: 0.5rem;
+        font-size: 12px;
+        max-height: 25%;
+    }
+
+    .testimonios-card{
+        margin-bottom: 1rem;
+    }
+
+    .testimonios img{
+        display: none;
+    }
+    .container{
+        padding-bottom: 0;
+        margin-bottom: 0;
+}
 }
 
 /*------ PRECIOS ------*/
@@ -230,5 +307,43 @@ footer a{
     color: #fff;
 }
 
+.btn-editar-perfil:hover{
+    background-color: grey;
+}
+
 /* HISTORIAL DE TURNOS */
 
+.contenedor-tarjeta{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.contenedor-tarjeta h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+.tarjeta{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    border-radius: 10px;
+}
+.contenido-tarjeta{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.item{
+    font-weight: bold;
+}
+
+.texto-tarjeta{
+    padding: 0;
+    margin: 0;
+}
