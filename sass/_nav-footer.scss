@@ -1,0 +1,43 @@
+/*--- NAVBAR ---*/
+
+.navbar{
+    background-color: #2129a5;
+    img{
+        padding-left: 1.5rem
+    }
+}
+
+/*--- FOOTER ---*/
+
+footer{
+    background-color: #2129a5;
+    height: 10rem;
+    font-size: 15px;
+    section{
+        padding-top: 1.5rem;
+        h3{
+        font-size: 21px;
+        color:#fff
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        a{
+        color: #fff;
+        text-decoration: none;
+        list-style: none;
+        }
+    }
+    
+}
+
+.logo-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    img{
+        width: 10rem;
+    }
+}

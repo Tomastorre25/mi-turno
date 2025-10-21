@@ -1,0 +1,200 @@
+/*----- MOBILE -----*/
+
+@media (max-width: 576px){
+
+/* FOOTER */
+
+.logo-footer{
+        display: flex;
+        justify-content: start;
+        padding: 0.5rem;
+        img{
+            max-width: 100px;
+        }
+    }
+
+.categoria{
+        font-size: 10px;
+        h3{
+            font-size: 12px;
+        }
+    }
+
+    /* INICIO */
+
+    .contenedor{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .destacados{
+        padding: 20px;
+        margin-top: 60px;
+    }
+
+    .carousel-item{
+        height: auto;
+        img{
+            height: 250px;
+        }
+        div{
+            padding: 0.5rem;
+        font-size: 12px;
+        max-height: 25%;
+        }
+    }
+
+    .descargar-app{
+        padding: 0;
+        margin: 0;
+        img{
+            max-width: 250px;
+        }
+    }
+
+    .testimonios-card{
+        margin-bottom: 1rem;
+        img{
+            display: none;
+        }
+    }
+
+    /* PRECIOS */
+
+    .plan{
+        margin: 1rem;
+    }
+
+    /* SERVICIOS */
+
+    .reverse{
+        flex-direction: column;
+    }
+
+    .icono img{
+        width: 100px;
+    }
+
+    .texto{
+        text-align: center;
+    }
+
+    /*----- SALONES -----*/
+
+    .descripcion{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .salones{
+        flex-direction: column;
+    }
+
+    .contenido{
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    
+
+    .horarios-dsk{
+        display: none;
+    }
+
+    .horarios-mbl{
+            margin: 1rem;
+            ul{
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0;
+                li{
+                    padding: 2px;
+                    width: 14%;
+                }
+            }
+    }
+
+    .borde{
+        border-left: grey solid 1px;
+    }
+
+    /*----- MI CUENTA -----*/
+
+    /* PERFIL */
+
+    .contenedor-mc{
+        margin-top: 6rem;
+    }
+    
+    .perfil{
+        flex-direction: column;
+        h2{
+            display: none;
+        }
+        img{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .datos{
+        text-align: center;
+        div{
+        padding: 0;
+        p{
+            padding: 0;
+            }
+        }
+    }
+
+    /* HISTORIAL DE TURNOS */
+
+    .contenedor-tarjeta{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta{
+        padding: 1rem;
+        h3{
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+    
+    .tarjeta{
+        div{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        
+    }
+
+}
+
+/*----- DESKTOP -----*/
+
+@media (min-width: 960px){
+    
+    .informacion{
+    display: flex;
+    align-items: center;}
+
+    .muestra2{display: flex;
+    flex-direction: row-reverse;
+    }
+
+    /*----- SALONES -----*/
+
+    .horarios-mbl{
+        display: none;
+    }
+}

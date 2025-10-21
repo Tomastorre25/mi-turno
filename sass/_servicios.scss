@@ -1,0 +1,14 @@
+/*----- SERVICIOS ------*/
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.icono{
+    display: flex;
+    justify-content: center;
+    .icono img{
+    width:200px;
+}
+}

@@ -1,0 +1,10 @@
+/*----- POLITICAS DE PRIVACIDAD -----*/
+
+.primer-contenido{
+    ul li{
+        list-style: none;
+        ul li{
+            list-style: disc;
+        }
+    }
+}

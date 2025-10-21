@@ -10,7 +10,7 @@
 <body>
     <header>
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <img class="nav-logo" src="../media/logo.PNG" alt="Mi Turno" height="40">
@@ -31,114 +31,162 @@
             </div>
         </nav>
     </header>
-    <main class="row col-lg-10 offset-lg-1">
-
+    <main>
+            <div class="container contenedor-mc col-lg-10 offset-lg-1">
             <!-- PERFIL -->
-            <section class="perfil shadow-sm">
-                <div class="col-lg-4 imagen">
+            <section class="row perfil shadow-sm">
+                <div class="col-12">
+                    <h2>Mi Cuenta</h2>
+                </div>
+                <div class="col-sm-12 col-md-4 imagen">
                 <img src="../media/cliente1.jpg" alt="Foto de perfil" class="rounded-circle shadow-sm">
                 </div>
 
-                <div class="col-lg-8 datos">
-                <h2>Mi Cuenta</h2>
-                <div class="row">
-                    <div class="row">
-                    <p class="col-lg-3">Nombre:</p>
-                    <p class="col-lg-9">Facundo</p>
+                <div class="row col-md-8 datos">
+                
+                    <div class="col-md-3">
+                        <p class="item">Nombre:</p>
                     </div>
-                    <div class="row">
-                    <p class="col-lg-3">Apellido:</p>
-                    <p class="col-lg-9">de la Fuente</p>
+                    <div class="col-md-9">
+                        <p class="col-lg-9">Facundo</p>
                     </div>
-                    <div class="row">
-                    <p class="col-lg-3">Fecha de nacimiento:</p>
-                    <p class="col-lg-9">30/05/1998</p>
+                    <div class="col-md-3">
+                    <p class="item">Apellido:</p>
                     </div>
-                    <div class="row">
-                    <p class="col-lg-3">Edad:</p>
-                    <p class="col-lg-9">27</p>
+                    <div class="col-md-9">
+                    <p>de la Fuente</p>
                     </div>
-                    <div class="row">
-                    <p class="col-lg-3">Localidad:</p>
-                    <p class="col-lg-9">Adrogue, Buenos Aires</p>
+                    <div class="col-md-3">
+                    <p class="item">Fecha de nacimiento:</p>
                     </div>
-                </div>
-                <div class="editar-perfil col-lg-2 offset-lg-10">
+                    <div class="col-md-9">
+                    <p>30/05/1998</p>
+                    </div>
+                    <div class="col-md-3">
+                    <p class="item">Edad:</p>
+                    </div>
+                    <div class="col-md-9">
+                    <p>27</p>
+                    </div>
+                    <div class="col-md-3">
+                    <p class="item">Localidad:</p>
+                    </div>
+                    <div class="col-md-9">
+                    <p>Adrogue, Buenos Aires</p>
+                    </div>
+                <div class="editar-perfil col-md-3 offset-lg-9">
                     <button class="btn-editar-perfil">Editar perfil</button>
                 </div>
                 </div>
             </section>
 
             <!-- HISTORIAL DE TURNOS -->
-            <section class="row contenedor-tarjeta col-lg-12">
-                <h2>Historial de Turnos</h2>
-                <div class="tarjeta row col-lg-4 shadow-sm">
-                    <h3 class="col-lg-12 ">King's Barbershop</h3>
-                    <div class="contenido-tarjeta row">
-                        <p class="col-lg-3 item">Servicio:</p>
-                        <p class="col-lg-9 texto-tarjeta">Corte clasico</p>
-                        <p class="col-lg-3 item">Fecha:</p>
-                        <p class="col-lg-9 texto-tarjeta">02/08/2025</p>
-                        <p class="col-lg-3 item">Estado</p>
-                        <p class="col-lg-9 texto-tarjeta">Cancelado ❌</p>
+            <section class="row contenedor-tarjeta col-12">
+                <h2 class="col-12">Historial de Turnos</h2>
+                <div class="tarjeta row col-sm-12 col-md-4 shadow-sm">
+                    <h3 class="col-12 ">King's Barbershop</h3>
+                    <div class="contenido-tarjeta row col-sm-12">
+                        <div class="col-4">
+                        <p class="item">Servicio:</p>
+                        </div>
+                        <div class="col-8">
+                        <p class="texto-tarjeta">Corte clasico</p>
+                        </div>
+                        <div class="col-4">
+                        <p class="item">Fecha:</p>
+                        </div>
+                        <div class="col-8">
+                        <p class="texto-tarjeta">02/08/2025</p>
+                        </div>
+                        <div class="col-4">
+                        <p class="item">Estado</p>
+                        </div>
+                        <div class="col-8">
+                        <p class="texto-tarjeta">Cancelado ❌</p>
+                        </div>
                     </div>
                 </div>
-                <div class="tarjeta row col-lg-4 shadow-sm">
-                    <h3 class="col-lg-12 ">Camora</h3>
-                    <div class="contenido-tarjeta row">
-                        <p class="col-lg-3 item">Servicio:</p>
-                        <p class="col-lg-9 texto-tarjeta">Corte clasico</p>
-                        <p class="col-lg-3 item">Fecha:</p>
-                        <p class="col-lg-9 texto-tarjeta">10/07/2025</p>
-                        <p class="col-lg-3 item">Estado</p>
-                        <p class="col-lg-9 texto-tarjeta">Confirmado ✔️</p>
+                <div class="tarjeta row col-sm-12 col-md-4 shadow-sm">
+                    <h3 class="col-12 ">King's Barbershop</h3>
+                    <div class="contenido-tarjeta row col-sm-12">
+                        <div class="col-4">
+                        <p class="item">Servicio:</p>
+                        </div>
+                        <div class="col-8">
+                        <p class="texto-tarjeta">Corte clasico</p>
+                        </div>
+                        <div class="col-4">
+                        <p class="item">Fecha:</p>
+                        </div>
+                        <div class="col-8">
+                        <p class="texto-tarjeta">02/08/2025</p>
+                        </div>
+                        <div class="col-4">
+                        <p class="item">Estado</p>
+                        </div>
+                        <div class="col-8">
+                        <p class="texto-tarjeta">Cancelado ❌</p>
+                        </div>
                     </div>
                 </div>
-                <div class="tarjeta row col-lg-4 shadow-sm">
-                    <h3 class="col-lg-12 ">Salon Palermo</h3>
-                    <div class="contenido-tarjeta row">
-                        <p class="col-lg-3 item">Servicio:</p>
-                        <p class="col-lg-9 texto-tarjeta">Corte clasico</p>
-                        <p class="col-lg-3 item">Fecha:</p>
-                        <p class="col-lg-9 texto-tarjeta">15/06/2025</p>
-                        <p class="col-lg-3 item">Estado</p>
-                        <p class="col-lg-9 texto-tarjeta">Confirmado ✔️</p>
+                <div class="tarjeta row col-sm-12 col-md-4 shadow-sm">
+                    <h3 class="col-12 ">King's Barbershop</h3>
+                    <div class="contenido-tarjeta row col-sm-12">
+                        <div class="col-4">
+                        <p class="item">Servicio:</p>
+                        </div>
+                        <div class="col-8">
+                        <p class="texto-tarjeta">Corte clasico</p>
+                        </div>
+                        <div class="col-4">
+                        <p class="item">Fecha:</p>
+                        </div>
+                        <div class="col-8">
+                        <p class="texto-tarjeta">02/08/2025</p>
+                        </div>
+                        <div class="col-4">
+                        <p class="item">Estado</p>
+                        </div>
+                        <div class="col-8">
+                        <p class="texto-tarjeta">Cancelado ❌</p>
+                        </div>
                     </div>
                 </div>
 
             </section>
+            </div>
     </main>
 
     <!-- FOOTER -->
 
     <footer>
     <section class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="logo-footer col-lg-3">
+      <div class="row justify-content-center">
+        <div class="logo-footer col col-sm-3 col-lg-3">
             <a class="row" href="#"><img src="../media/logo.png" alt="logo"></a>
             <a class="row" href=""><img src="../media/descargar-footer.PNG" alt="Descargar App"></a>
         </div>
-        <div class="categoria col-lg-3">
+        <div class="categoria col col-sm-3 col-lg-3">
             <h3>Acerca de</h3>
-            <ul>
-                <li><a href="./page/footer/trabajo.html">Trabaja con nosotros</a></li>
+              <ul>
+                <li><a href="../page/footer/trabajo.html">Trabaja con nosotros</a></li>
                 <li><a href="">Como usar</a></li>
-                <li><a href="./page/footer/acerca-de.html">Nosotros</a></li>
-            </ul>
+                <li><a href="../page/footer/acerca-de.html">Nosotros</a></li>
+              </ul>
         </div>
-        <div class="categoria col-lg-3">
+        <div class="categoria col col-sm-3 col-lg-3">
             <h3>Informacion legal</h3>
-            <ul>
-                <li><a href="./page/footer/informacion-legal.html">Politicas de privacidad</a></li>
-                <li><a href="./page/footer/informacion-legal.html">Terminos y condiciones</a></li>
-            </ul>
+              <ul>
+                <li><a href="../page/footer/politicas-de-privacidad.html">Politicas de privacidad</a></li>
+                <li><a href="../page/footer/terminos-y-condiciones.html">Terminos y condiciones</a></li>
+              </ul>
         </div>
-        <div class="categoria col-lg-3">
+        <div class="categoria col col-sm-3 col-lg-3">
             <h3>Contacto</h3>
-            <ul>
-                <li><a href="./page/footer/atencion-al-cliente.html">Atencion al cliente</a></li>
-                <li><a href="./page/footer/dejanos-tu-consulta.html">Dejanos tu consulta</a></li>
-            </ul>
+              <ul>
+                <li><a href="../page/footer/atencion-al-cliente.html">Atencion al cliente</a></li>
+                <li><a href="../page/footer/dejanos-tu-consulta.html">Dejanos tu consulta</a></li>
+              </ul>
         </div>
         </div>
     </section>
