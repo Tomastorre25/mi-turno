@@ -1,1 +1,48 @@
 /*----- DEJANOS TU CONSULTA -----*/
+
+.formulario{
+    margin: auto;
+}
+
+.campo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    label{
+        font-weight: bold;
+    }
+    input{
+        border-radius: 10px;
+        border: transparent;
+        background-color: lightgray
+    }
+}
+
+.campo-consulta{
+    text-align: center;
+    textarea{
+        height: 200px;
+        border-radius: 10px;
+        border: transparent;
+        background-color: lightgrey;
+    }
+}
+
+.btn-enviar{
+        display: flex;
+        justify-content: center;
+        input{
+            width: 150px;
+            border-radius: 20px;
+            border: lightgrey 1px solid;
+            background-color: #fff;
+            &:hover{
+                background-color: lightgray;
+        }
+        }    
+}
+
+.consultas{
+    margin-bottom: 3rem;
+}
+

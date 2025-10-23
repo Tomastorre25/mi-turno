@@ -11,8 +11,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img class="nav-logo" src="../../media/logo.PNG" alt="Mi Turno" height="40">
+            <a class="navbar-brand" href="../../index.html">
+                <img class="nav-logo" src="../../media/logo.png" alt="Mi Turno" height="40">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Menú">
@@ -31,29 +31,39 @@
         </nav>
     </header>
     <main>
-        <div class="container contenedor">
+        <div class="container contenedor consultas">
         <h2 class="col-12 titulo">Dejanos tu consulta</h2>
-        <div>
+        <div class="row col-12 formulario">
         <form action="/submit" method="post">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido">
-
-            <label for="telefono">Nro. de telefono</label>
-            <input type="tel" name="telefono" id="telefono">
-
-            <label for="localidad">Localidad</label>
-            <input type="text" name="localidad" id="localidad">
-
-            <label for="mail">Mail</label>
-            <input type="email" name="mail" id="mail">
-
-            <label for="consulta">Escriba su consulta</label>
-            <textarea name="consulta" id="consulta"></textarea>
-
+          <div class="row col-12">
+          <div class="col-sm-12 col-md-4 campo">
+            <label class="col-3" for="nombre">Nombre</label>
+            <input class="col-8" type="text" name="nombre" id="nombre">
+          </div>
+          <div class="col-sm-12 col-md-4 campo">
+            <label class="col-3" for="apellido">Apellido</label>
+            <input class="col-8" type="text" name="apellido" id="apellido">
+          </div>
+          <div class="col-sm-12 col-md-4 campo">
+            <label class="col-3" for="telefono">Telefono</label>
+            <input class="col-8" type="tel" name="telefono" id="telefono">
+          </div>
+          <div class="col-sm-12 col-md-6 campo">
+            <label class="col-3" for="localidad">Localidad</label>
+            <input class="col-8" type="text" name="localidad" id="localidad">
+          </div>
+          <div class="col-sm-12 col-md-6 campo">
+            <label class="col-3" for="mail">Mail</label>
+            <input class="col-8" type="email" name="mail" id="mail">
+          </div>
+            <div class="campo campo-consulta">
+            <label class="col-12" for="consulta">Escriba su consulta</label>
+            <textarea class="col-12" name="consulta" id="consulta"></textarea>
+          </div>
+          <div class="btn-enviar col-12">
             <input type="button" value="Enviar">
+          </div>  
+          </div>
         </form>
         </div>
         </div>
@@ -64,13 +74,13 @@
       <div class="row justify-content-center">
         <div class="logo-footer col col-sm-3 col-lg-3">
             <a class="row" href="#"><img src="../../media/logo.png" alt="logo"></a>
-            <a class="row" href=""><img src="../../media/descargar-footer.PNG" alt="Descargar App"></a>
+            <a class="row" href=""><img src="../../media/descargar-footer.png" alt="Descargar App"></a>
         </div>
         <div class="categoria col col-sm-3 col-lg-3">
             <h3>Acerca de</h3>
               <ul>
                 <li><a href="./trabajo.html">Trabaja con nosotros</a></li>
-                <li><a href="">Como usar</a></li>
+                <li><a href="./como-usar.html">Como usar</a></li>
                 <li><a href="./acerca-de.html">Nosotros</a></li>
               </ul>
         </div>
