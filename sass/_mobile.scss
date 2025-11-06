@@ -1,16 +1,17 @@
+
+
 /*----- MOBILE -----*/
 
 @media (max-width: 576px){
 
 /* FOOTER */
 
+.footer-mbl{
+    padding-left: 2rem;
+}
+
 .logo-footer{
-        display: flex;
-        justify-content: start;
-        padding: 0.5rem;
-        img{
-            max-width: 100px;
-        }
+        display: none;
     }
 
 .categoria{
@@ -21,11 +22,6 @@
     }
 
     /* INICIO */
-
-    .contenedor{
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
 
     .destacados{
         padding: 20px;
@@ -38,9 +34,18 @@
             height: 250px;
         }
         div{
-            padding: 0.5rem;
-        font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         max-height: 25%;
+             h3{
+                margin: 0rem 1rem 0rem 1rem;
+                font-size: 16px;
+            }
+            p{
+                margin: 0rem 1rem 0rem 1rem;
+                font-size: 12px
+            }
         }
     }
 
@@ -49,6 +54,30 @@
         margin: 0;
         img{
             max-width: 250px;
+        }
+    }
+    
+    .informacion{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        padding: 0;
+        div{
+            h3{
+                font-size: 24px;
+            }
+            p{
+                font-weight: 200;
+                padding: 0;
+            }
+        }
+    }
+
+    .testimonios{
+        h2{
+            font-size: 30px;
+            padding: 2rem;
+            padding-top: 0;
         }
     }
 
@@ -63,6 +92,17 @@
 
     .plan{
         margin: 1rem;
+    }
+
+    .plan-card{
+        h3{
+            font-size: 32px;
+        }
+        ul{
+            li{
+                font-size: 18px;
+            }
+        }
     }
 
     /* SERVICIOS */
@@ -81,44 +121,42 @@
 
     /*----- SALONES -----*/
 
+    .salones{
+       flex-direction: column;
+       padding: 1rem;
+    }
+    
     .descripcion{
-        flex-wrap: wrap;
-        margin: 0;
+        margin-top: 2rem;
+        margin-left: 0;
+        justify-content: center;
     }
 
-    .salones{
-        flex-direction: column;
+    .salon{
+        h2{
+            text-align: center;
+            font-size: 20px;
+        }
+        p{
+            text-align: center;
+            font-size: 15px;
+        }
     }
 
     .contenido{
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex-direction: row;
-        padding-left: 0rem;
-        padding-right: 0rem;
-        margin-top: 1rem;
-        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 
-    
-
-    .horarios-dsk{
-        display: none;
-    }
-
-    .horarios-mbl{
-            margin: 1rem;
-            ul{
+    .horarios{
+        margin-bottom: 1.5rem;
+        ul{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            li{
                 font-size: 13px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin: 0;
-                li{
-                    padding: 2px;
-                    width: 14%;
-                }
             }
+        }
     }
 
     .borde{
@@ -135,7 +173,8 @@
     
     .perfil{
         flex-direction: column;
-        h2{
+        align-items: center;
+        h1{
             display: none;
         }
         img{
@@ -149,9 +188,17 @@
         div{
         padding: 0;
         p{
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-bottom: .3rem;
+            margin-top: .3rem;
             padding: 0;
             }
         }
+    }
+
+    .editar-perfil{
+        margin-top: 1rem;
     }
 
     /* HISTORIAL DE TURNOS */
@@ -191,10 +238,98 @@
     .muestra2{display: flex;
     flex-direction: row-reverse;
     }
+}
 
-    /*----- SALONES -----*/
+/*----- TABLET -----*/
 
-    .horarios-mbl{
-        display: none;
+@media (min-width: 577px) and (max-width: 991px){
+    
+    /*FOOTER*/
+
+    .logo-footer{
+        padding-left: 1rem;
+        padding-right: auto;
     }
+    
+    /*INICIO*/
+    .informacion{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        padding: 0;
+        div{
+            h3{
+                text-align: center;
+                font-size: 24px;
+            }
+            p{
+                text-align: center;
+                font-weight: 200;
+                padding: 0;
+            }
+        }
+    }
+
+    .testimonios{
+        h2{
+            font-size: 30px;
+            padding: 2rem;
+            padding-top: 0;
+        }
+    }
+
+    .testimonios-card{
+        margin-bottom: 1rem;
+        img{
+            display: none;
+        }
+    }
+
+    /*SERVICIOS*/
+
+    .reverse{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .icono img{
+        width: 350px;
+    }
+
+    .informacion-md{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* PRECIOS */
+
+    .plan{
+        margin-top: 3rem;
+        height: 41rem;
+    }
+
+    .plan-card{
+            h3{
+                font-size: 46px;
+                text-align: center;
+                margin: 1.5rem;
+            }
+            ul{
+                margin: 1rem;
+                li{
+                    margin: .5rem;
+                    font-size: 22px;
+                }
+            }
+        }
+
+    /*----- MI CUENTA -----*/
+
+    /*BOTON*/
+
+    .btn-editar-perfil{
+        font-size: 13px;
+    }
+
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend+Mega:wght@100..900&family=Poiret+One&display=swap");
 /*----- RESET -----*/
 * {
   margin: 0;
@@ -6,34 +8,47 @@
 }
 
 /*--- NAVBAR ---*/
-.navbar {
-  background-color: #2129a5;
+.mi-navbar {
+  background-color: #202020;
 }
-.navbar img {
+.mi-navbar li a {
+  color: #FFF9DC;
+  font-size: 16px;
+}
+.mi-navbar li a:hover {
+  color: #697F65;
+}
+.mi-navbar img {
+  max-height: 100%;
   padding-left: 1.5rem;
+}
+
+#activo {
+  color: #697F65;
 }
 
 /*--- FOOTER ---*/
 footer {
-  background-color: #2129a5;
+  background-color: #202020;
   height: 10rem;
-  font-size: 15px;
 }
 footer section {
   padding-top: 1.5rem;
 }
 footer section h3 {
-  font-size: 21px;
-  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFF9DC;
 }
 footer section ul {
   list-style: none;
   padding: 0;
 }
-footer section a {
-  color: #fff;
+footer section ul a {
+  color: #FFF9DC;
   text-decoration: none;
-  list-style: none;
+  font-size: 14px;
+  font-weight: 250;
 }
 
 .logo-footer {
@@ -44,9 +59,17 @@ footer section a {
 }
 .logo-footer img {
   width: 10rem;
+  margin: 0.5rem;
+  margin-top: 0;
 }
 
 /*----- INDEX -----*/
+body {
+  background-color: #3C3D37;
+  color: #FFF9DC;
+  font-family: "Lexend Deca", sans-serif;
+}
+
 .contenedor {
   margin-top: 4rem;
   margin-bottom: 3rem;
@@ -58,18 +81,44 @@ footer section a {
   padding: 1rem;
 }
 
+.padre {
+  min-height: 75vh;
+}
+
 /*DESTACADOS*/
-.carousel-inner {
-  border-radius: 8px;
+.carousel-destacados {
+  width: 100%;
+}
+
+.caption {
+  left: 0;
+  right: 0;
+}
+.caption h3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 0;
+  font-size: 24px;
+}
+.caption p {
+  padding: 0;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-size: 18px;
 }
 
 .carousel-item {
-  height: 600px;
+  width: 100%;
 }
 .carousel-item img {
-  width: 100%;
-  height: auto;
+  height: 36rem;
   object-fit: cover;
+}
+
+.carousel-descripcion {
+  background-color: black;
+  opacity: 75%;
+  max-width: 100%;
 }
 
 /*DESCARGAR APP*/
@@ -80,10 +129,22 @@ footer section a {
   margin-bottom: 40px;
 }
 
-/*INORMACION*/
+/*INFORMACION*/
+.informacion {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
 .informacion img {
   max-width: 100%;
   border-radius: 10px;
+}
+.informacion h3 {
+  font-size: 24px;
+}
+.informacion p {
+  font-weight: 300;
 }
 
 .texto {
@@ -94,12 +155,32 @@ footer section a {
   padding-left: 0;
 }
 
+/*TESTIMONIOS*/
 .testimonios {
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
 .testimonios h2 {
+  font-size: 46px;
   text-align: center;
+  padding: 4rem;
+}
+
+.testimonios-card div {
+  border: 0;
+}
+.testimonios-card div h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFF9DC;
+}
+.testimonios-card div p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #FFF9DC;
+}
+.testimonios-card div div {
+  background-color: #697F65;
 }
 
 /*----- SERVICIOS ------*/
@@ -112,8 +193,8 @@ footer section a {
   display: flex;
   justify-content: center;
 }
-.icono .icono img {
-  width: 200px;
+.icono img {
+  width: 350px;
 }
 
 /*----- SALONES-----*/
@@ -123,69 +204,101 @@ footer section a {
   margin: 1rem;
   padding: 2rem;
   border-radius: 5px;
-  background-color: beige;
+  background-color: #697F65;
 }
 .salones img {
   border-radius: 5px;
 }
+.salones h2 {
+  margin-bottom: 0.1rem;
+  font-size: 28px;
+}
+.salones p {
+  font-size: 13px;
+  margin: 0.1rem;
+}
 
 .descripcion {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-left: 1rem;
 }
 
-.contenido {
-  padding-left: 2rem;
+.salon h2 {
+  font-size: 26px;
+}
+.salon p {
+  font-weight: 300;
+}
+
+.horarios {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.contenido div {
-  padding-right: 0.5rem;
-}
-.contenido ul {
+  flex-direction: column;
+  justify-content: center;
   padding: 0;
-  list-style: none;
+}
+.horarios h3 {
+  text-align: center;
+  padding: 0;
+  font-size: 18px;
 }
 
-.horarios-dsk {
+.dias ul {
   display: flex;
   flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0;
 }
-.horarios-dsk ul li {
-  width: 4rem;
+.dias ul li {
+  font-size: 16px;
+  font-weight: 350;
+  width: 14.28%;
+  text-align: center;
+}
+
+.horas ul li {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  font-weight: 200;
+}
+
+.horarios-dias {
+  width: 3rem;
 }
 
 .mapa {
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 .mapa iframe {
   width: 100%;
-  height: 1000%;
+  height: 100%;
 }
 
 /*----- MI CUENTA -----*/
 .perfil {
   display: flex;
-  align-items: center;
-  background-color: lightgray;
+  background-color: #697F65;
   font-size: 16px;
   margin: auto;
   margin-top: 6rem;
+  margin-bottom: 2rem;
   border-radius: 10px;
+  color: #FFF9DC;
 }
-.perfil h2 {
-  font-weight: bold;
+.perfil h1 {
+  font-size: 50px;
   text-align: center;
+  margin: 2rem;
 }
 
 .imagen {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .imagen img {
   width: 180px;
@@ -200,27 +313,32 @@ footer section a {
 }
 .editar-perfil button {
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #FFF9DC;
   border-radius: 5px;
   padding: 3px;
-  color: #fff;
+  color: #FFF9DC;
 }
 .editar-perfil button:hover {
-  background-color: grey;
+  color: #FFF9DC;
+  background-color: #3C3D37;
+  border: 1px solid #3C3D37;
 }
 
 /* HISTORIAL DE TURNOS */
 .contenedor-tarjeta {
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: #697F65;
   border-radius: 10px;
   margin: auto;
+  margin-bottom: 2rem;
   padding: 2rem;
+  color: #202020;
 }
 .contenedor-tarjeta h2 {
   font-weight: bold;
   text-align: center;
+  color: #FFF9DC;
 }
 
 .tarjeta {
@@ -228,11 +346,19 @@ footer section a {
   justify-content: center;
   padding: 0;
   border-radius: 10px;
+  margin-top: 1rem;
+  background-color: #FFF9DC;
+}
+.tarjeta h3 {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 20px;
 }
 .tarjeta div {
   display: flex;
   justify-content: center;
   padding: 0;
+  padding-left: 0.5rem;
 }
 
 .item {
@@ -244,172 +370,6 @@ footer section a {
   margin: 0;
 }
 
-/*----- POLITICAS DE PRIVACIDAD -----*/
-.primer-contenido ul li {
-  list-style: none;
-}
-.primer-contenido ul li ul li {
-  list-style: disc;
-}
-
-/*----- MOBILE -----*/
-@media (max-width: 576px) {
-  /* FOOTER */
-  .logo-footer {
-    display: flex;
-    justify-content: start;
-    padding: 0.5rem;
-  }
-  .logo-footer img {
-    max-width: 100px;
-  }
-  .categoria {
-    font-size: 10px;
-  }
-  .categoria h3 {
-    font-size: 12px;
-  }
-  /* INICIO */
-  .contenedor {
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-  .destacados {
-    padding: 20px;
-    margin-top: 60px;
-  }
-  .carousel-item {
-    height: auto;
-  }
-  .carousel-item img {
-    height: 250px;
-  }
-  .carousel-item div {
-    padding: 0.5rem;
-    font-size: 12px;
-    max-height: 25%;
-  }
-  .descargar-app {
-    padding: 0;
-    margin: 0;
-  }
-  .descargar-app img {
-    max-width: 250px;
-  }
-  .testimonios-card {
-    margin-bottom: 1rem;
-  }
-  .testimonios-card img {
-    display: none;
-  }
-  /* PRECIOS */
-  .plan {
-    margin: 1rem;
-  }
-  /* SERVICIOS */
-  .reverse {
-    flex-direction: column;
-  }
-  .icono img {
-    width: 100px;
-  }
-  .texto {
-    text-align: center;
-  }
-  /*----- SALONES -----*/
-  .descripcion {
-    flex-wrap: wrap;
-    margin: 0;
-  }
-  .salones {
-    flex-direction: column;
-  }
-  .contenido {
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-left: 0rem;
-    padding-right: 0rem;
-    margin-top: 1rem;
-    text-align: center;
-  }
-  .horarios-dsk {
-    display: none;
-  }
-  .horarios-mbl {
-    margin: 1rem;
-  }
-  .horarios-mbl ul {
-    font-size: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-  }
-  .horarios-mbl ul li {
-    padding: 2px;
-    width: 14%;
-  }
-  .borde {
-    border-left: grey solid 1px;
-  }
-  /*----- MI CUENTA -----*/
-  /* PERFIL */
-  .contenedor-mc {
-    margin-top: 6rem;
-  }
-  .perfil {
-    flex-direction: column;
-  }
-  .perfil h2 {
-    display: none;
-  }
-  .perfil img {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-  .datos {
-    text-align: center;
-  }
-  .datos div {
-    padding: 0;
-  }
-  .datos div p {
-    padding: 0;
-  }
-  /* HISTORIAL DE TURNOS */
-  .contenedor-tarjeta {
-    flex-direction: column;
-    align-items: center;
-  }
-  .tarjeta {
-    padding: 1rem;
-  }
-  .tarjeta h3 {
-    font-size: 20px;
-    text-align: center;
-  }
-  .tarjeta div {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-}
-/*----- DESKTOP -----*/
-@media (min-width: 960px) {
-  .informacion {
-    display: flex;
-    align-items: center;
-  }
-  .muestra2 {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  /*----- SALONES -----*/
-  .horarios-mbl {
-    display: none;
-  }
-}
 /*----- DEJANOS TU CONSULTA -----*/
 .formulario {
   margin: auto;
@@ -455,6 +415,285 @@ footer section a {
 
 .consultas {
   margin-bottom: 3rem;
+}
+
+/*----- POLITICAS DE PRIVACIDAD -----*/
+.primer-contenido ul li {
+  list-style: none;
+}
+.primer-contenido ul li ul li {
+  list-style: disc;
+}
+
+.plan {
+  height: 32rem;
+}
+
+.plan-card h3 {
+  font-size: 26px;
+  text-align: center;
+}
+.plan-card ul li {
+  font-size: 14px;
+  font-weight: 350;
+}
+
+/*----- MOBILE -----*/
+@media (max-width: 576px) {
+  /* FOOTER */
+  .footer-mbl {
+    padding-left: 2rem;
+  }
+  .logo-footer {
+    display: none;
+  }
+  .categoria {
+    font-size: 10px;
+  }
+  .categoria h3 {
+    font-size: 12px;
+  }
+  /* INICIO */
+  .destacados {
+    padding: 20px;
+    margin-top: 60px;
+  }
+  .carousel-item {
+    height: auto;
+  }
+  .carousel-item img {
+    height: 250px;
+  }
+  .carousel-item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 25%;
+  }
+  .carousel-item div h3 {
+    margin: 0rem 1rem 0rem 1rem;
+    font-size: 16px;
+  }
+  .carousel-item div p {
+    margin: 0rem 1rem 0rem 1rem;
+    font-size: 12px;
+  }
+  .descargar-app {
+    padding: 0;
+    margin: 0;
+  }
+  .descargar-app img {
+    max-width: 250px;
+  }
+  .informacion {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .informacion div h3 {
+    font-size: 24px;
+  }
+  .informacion div p {
+    font-weight: 200;
+    padding: 0;
+  }
+  .testimonios h2 {
+    font-size: 30px;
+    padding: 2rem;
+    padding-top: 0;
+  }
+  .testimonios-card {
+    margin-bottom: 1rem;
+  }
+  .testimonios-card img {
+    display: none;
+  }
+  /* PRECIOS */
+  .plan {
+    margin: 1rem;
+  }
+  .plan-card h3 {
+    font-size: 32px;
+  }
+  .plan-card ul li {
+    font-size: 18px;
+  }
+  /* SERVICIOS */
+  .reverse {
+    flex-direction: column;
+  }
+  .icono img {
+    width: 100px;
+  }
+  .texto {
+    text-align: center;
+  }
+  /*----- SALONES -----*/
+  .salones {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .descripcion {
+    margin-top: 2rem;
+    margin-left: 0;
+    justify-content: center;
+  }
+  .salon h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .salon p {
+    text-align: center;
+    font-size: 15px;
+  }
+  .contenido {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .horarios {
+    margin-bottom: 1.5rem;
+  }
+  .horarios ul {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .horarios ul li {
+    font-size: 13px;
+  }
+  .borde {
+    border-left: grey solid 1px;
+  }
+  /*----- MI CUENTA -----*/
+  /* PERFIL */
+  .contenedor-mc {
+    margin-top: 6rem;
+  }
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+  }
+  .perfil h1 {
+    display: none;
+  }
+  .perfil img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .datos {
+    text-align: center;
+  }
+  .datos div {
+    padding: 0;
+  }
+  .datos div p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+    padding: 0;
+  }
+  .editar-perfil {
+    margin-top: 1rem;
+  }
+  /* HISTORIAL DE TURNOS */
+  .contenedor-tarjeta {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarjeta {
+    padding: 1rem;
+  }
+  .tarjeta h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .tarjeta div {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+/*----- DESKTOP -----*/
+@media (min-width: 960px) {
+  .informacion {
+    display: flex;
+    align-items: center;
+  }
+  .muestra2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+/*----- TABLET -----*/
+@media (min-width: 577px) and (max-width: 991px) {
+  /*FOOTER*/
+  .logo-footer {
+    padding-left: 1rem;
+    padding-right: auto;
+  }
+  /*INICIO*/
+  .informacion {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .informacion div h3 {
+    text-align: center;
+    font-size: 24px;
+  }
+  .informacion div p {
+    text-align: center;
+    font-weight: 200;
+    padding: 0;
+  }
+  .testimonios h2 {
+    font-size: 30px;
+    padding: 2rem;
+    padding-top: 0;
+  }
+  .testimonios-card {
+    margin-bottom: 1rem;
+  }
+  .testimonios-card img {
+    display: none;
+  }
+  /*SERVICIOS*/
+  .reverse {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .icono img {
+    width: 350px;
+  }
+  .informacion-md {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  /* PRECIOS */
+  .plan {
+    margin-top: 3rem;
+    height: 41rem;
+  }
+  .plan-card h3 {
+    font-size: 46px;
+    text-align: center;
+    margin: 1.5rem;
+  }
+  .plan-card ul {
+    margin: 1rem;
+  }
+  .plan-card ul li {
+    margin: 0.5rem;
+    font-size: 22px;
+  }
+  /*----- MI CUENTA -----*/
+  /*BOTON*/
+  .btn-editar-perfil {
+    font-size: 13px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

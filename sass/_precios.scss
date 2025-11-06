@@ -1,0 +1,18 @@
+@use "variables" as*;
+
+.plan{
+    height: 32rem;
+}
+
+.plan-card{
+    h3{
+        font-size: 26px;
+        text-align: center;
+    }
+    ul{
+        li{
+            font-size: 14px;
+            font-weight: 350;
+        }
+    }
+}

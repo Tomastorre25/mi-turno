@@ -4,102 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosultas</title>
+    <link rel="icon" href="../../media/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../media/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top mi-navbar">
             <div class="container-fluid">
-            <a class="navbar-brand" href="../../index.html">
-                <img class="nav-logo" src="../../media/logo.png" alt="Mi Turno" height="40">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Menú">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="../servicios.html">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link" href="../salones.html">Salones</a></li>
-                <li class="nav-item"><a class="nav-link" href="../precios.html">Precios</a></li>
-                <li class="nav-item"><a class="nav-link" href="../mi-cuenta.html">Mi cuenta</a></li>
-                </ul>
-            </div>
+              <a class="navbar-brand" href="../../index.html">
+                  <img class="nav-logo" src="../../media/logo-blanco.png" alt="Logo. Una agenda con una tijera." height="40">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Menú">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../servicios.html">Servicios</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../salones.html">Salones</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../precios.html">Precios</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../mi-cuenta.html">Mi cuenta</a></li>
+                  </ul>
+              </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="container contenedor consultas">
-        <h2 class="col-12 titulo">Dejanos tu consulta</h2>
-        <div class="row col-12 formulario">
-        <form action="/submit" method="post">
-          <div class="row col-12">
-          <div class="col-sm-12 col-md-4 campo">
-            <label class="col-3" for="nombre">Nombre</label>
-            <input class="col-8" type="text" name="nombre" id="nombre">
-          </div>
-          <div class="col-sm-12 col-md-4 campo">
-            <label class="col-3" for="apellido">Apellido</label>
-            <input class="col-8" type="text" name="apellido" id="apellido">
-          </div>
-          <div class="col-sm-12 col-md-4 campo">
-            <label class="col-3" for="telefono">Telefono</label>
-            <input class="col-8" type="tel" name="telefono" id="telefono">
-          </div>
-          <div class="col-sm-12 col-md-6 campo">
-            <label class="col-3" for="localidad">Localidad</label>
-            <input class="col-8" type="text" name="localidad" id="localidad">
-          </div>
-          <div class="col-sm-12 col-md-6 campo">
-            <label class="col-3" for="mail">Mail</label>
-            <input class="col-8" type="email" name="mail" id="mail">
-          </div>
-            <div class="campo campo-consulta">
-            <label class="col-12" for="consulta">Escriba su consulta</label>
-            <textarea class="col-12" name="consulta" id="consulta"></textarea>
-          </div>
-          <div class="btn-enviar col-12">
-            <input type="button" value="Enviar">
-          </div>  
-          </div>
-        </form>
-        </div>
+        <div class="padre">
+            <div class="container contenedor consultas">
+                <h2 class="col-12 titulo">Dejanos tu consulta</h2>
+                <div class="row col-12 formulario">
+                    <form action="/submit" method="post">
+                        <div class="row col-12">
+                            <div class="col-sm-12 col-md-4 campo">
+                                <label class="col-3" for="nombre">Nombre</label>
+                                <input class="col-8" type="text" name="nombre" id="nombre">
+                            </div>
+                            <div class="col-sm-12 col-md-4 campo">
+                                <label class="col-3" for="apellido">Apellido</label>
+                                <input class="col-8" type="text" name="apellido" id="apellido">
+                            </div>
+                            <div class="col-sm-12 col-md-4 campo">
+                                <label class="col-3" for="telefono">Telefono</label>
+                                <input class="col-8" type="tel" name="telefono" id="telefono">
+                            </div>
+                            <div class="col-sm-12 col-md-6 campo">
+                                <label class="col-3" for="localidad">Localidad</label>
+                                <input class="col-8" type="text" name="localidad" id="localidad">
+                            </div>
+                            <div class="col-sm-12 col-md-6 campo">
+                                <label class="col-3" for="mail">Mail</label>
+                                <input class="col-8" type="email" name="mail" id="mail">
+                            </div>
+                            <div class="campo campo-consulta">
+                                <label class="col-12" for="consulta">Escriba su consulta</label>
+                                <textarea class="col-12" name="consulta" id="consulta"></textarea>
+                            </div>
+                            <div class="btn-enviar col-12">
+                                <input type="button" value="Enviar">
+                            </div>  
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
     <!-- FOOTER -->
-  <footer>
-    <section class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="logo-footer col col-sm-3 col-lg-3">
-            <a class="row" href="#"><img src="../../media/logo.png" alt="logo"></a>
-            <a class="row" href=""><img src="../../media/descargar-footer.png" alt="Descargar App"></a>
-        </div>
-        <div class="categoria col col-sm-3 col-lg-3">
-            <h3>Acerca de</h3>
+    <footer>
+      <section class="container-fluid footer-mbl">
+        <div class="row justify-content-center">
+          <div class="logo-footer col col-md-3 col-lg-3">
+              <a class="row" href="../../index.html">
+                <img src="../../media/logo-blanco.png" alt="Logo. Una agenda con una tijera.">
+              </a>
+              <a class="row" href="">
+                <img src="../../media/descargar-footer.png" alt="Ovalo gris con el logo de apple y android para descargar la applicacion.">
+              </a>
+          </div>
+          <div class="categoria col col-sm-4 col-md-3 col-lg-3">
+              <h3>Acerca de</h3>
               <ul>
                 <li><a href="./trabajo.html">Trabaja con nosotros</a></li>
                 <li><a href="./como-usar.html">Como usar</a></li>
                 <li><a href="./acerca-de.html">Nosotros</a></li>
               </ul>
-        </div>
-        <div class="categoria col col-sm-3 col-lg-3">
-            <h3>Informacion legal</h3>
+          </div>
+          <div class="categoria col col-sm-4 col-md-3 col-lg-3">
+              <h3>Informacion legal</h3>
               <ul>
                 <li><a href="./politicas-de-privacidad.html">Politicas de privacidad</a></li>
                 <li><a href="./terminos-y-condiciones.html">Terminos y condiciones</a></li>
               </ul>
-        </div>
-        <div class="categoria col col-sm-3 col-lg-3">
-            <h3>Contacto</h3>
+          </div>
+          <div class="categoria col col-sm-4 col-md-3 col-lg-3">
+              <h3>Contacto</h3>
               <ul>
                 <li><a href="./atencion-al-cliente.html">Atencion al cliente</a></li>
                 <li><a href="#">Dejanos tu consulta</a></li>
               </ul>
+          </div>
         </div>
-        </div>
-    </section>
+      </section>
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

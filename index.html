@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Turno</title>
+  <link rel="icon" href="./media/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top mi-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img class="nav-logo" src="./media/logo.png" alt="Mi Turno" height="40">
+        <img class="nav-logo" src="./media/logo-blanco.png" alt="Logo. Una agenda con una tijera" height="40">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Menú">
@@ -21,7 +23,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" id="activo" href="#">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="page/servicios.html">Servicios</a></li>
           <li class="nav-item"><a class="nav-link" href="page/salones.html">Salones</a></li>
           <li class="nav-item"><a class="nav-link" href="page/precios.html">Precios</a></li>
@@ -32,51 +34,46 @@
   </nav>
 
   <!-- DESTACADOS -->
-  <section class="container  contenedor destacados">
-    <h2 class="col-lg-12 titulo">Destacados</h2>
+  <section class="contenedor">
     <div id="carouselDestacados" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-
         <div class="carousel-item active">
-          <img src="media/salon1.jpg" class="d-block w-100" alt="Salón 1">
-          <div class="carousel-caption d-block d-md-block text-start bg-dark bg-opacity-75 rounded">
-            <h5>King's Barbershop</h5>
+          <img src="media/salon1.jpg" class="d-block w-100" alt="Salon con 3 sillones estilo antiguo y dos sillones de 2 cuerpos para esperar.">
+          <!-- <div class="carousel-caption d-block d-md-block text-start bg-dark bg-opacity-75 rounded"> -->
+          <div class="carousel-caption text-start bg-dark bg-opacity-75 caption">
+            <h3>King's Barbershop</h3>
             <p>
               ⭐⭐⭐⭐⭐
             </p>
           </div>
         </div>
-
         <div class="carousel-item">
-          <img src="media/salon2.jpg" class="d-block w-100" alt="Salón 2">
-          <div class="carousel-caption d-block d-md-block text-start bg-dark bg-opacity-75 rounded carousel-description">
-            <h5>The Hermann Safe Co.</h5>
+          <img src="media/salon2.jpg" class="d-block w-100" alt="Salón estilo vintage con 7 puestos.">
+          <div class="carousel-caption text-start bg-dark bg-opacity-75 caption">
+            <h3>The Hermann Safe Co.</h3>
             <p>
               ⭐⭐⭐⭐⭐
             </p>
           </div>
         </div>
-
         <div class="carousel-item">
-          <img src="media/salon3.jpg" class="d-block w-100" alt="Salón 3">
-          <div class="carousel-caption d-block d-md-block text-start bg-dark bg-opacity-75 rounded">
-            <h5>Camora</h5>
+          <img src="media/salon3.jpg" class="d-block w-100" alt="Salón con 3 puestos y un hombre cortandole el pelo a otro.">
+          <div class="carousel-caption text-start bg-dark bg-opacity-75 caption">
+            <h3>Camora</h3>
             <p>
               ⭐⭐⭐⭐⭐
             </p>
           </div>
         </div>
-
         <div class="carousel-item">
-          <img src="media/salon4.jpg" class="d-block w-100" alt="Salón 4">
-          <div class="carousel-caption d-block d-lg-block text-start bg-dark bg-opacity-75 rounded">
-            <h5>Salón Palermo</h5>
+          <img src="media/salon4.jpg" class="d-block w-100" alt="Salón con 2 sillones antiguos y un estillo vintage con antiguedades.">
+          <div class="carousel-caption text-start bg-dark bg-opacity-75 caption">
+            <h3>Salón Palermo</h3>
             <p>
               ⭐⭐⭐⭐⭐
             </p>
           </div>
         </div>
-
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestacados" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
@@ -89,30 +86,26 @@
 
   <!-- DESCARGAR APP -->
   <section>
-    <div class="col-lg-12 descargar-app">
-        <img src="./media/descargar-app.png" alt="Descargar App">
-  </section>
+    <div class="col-12 descargar-app">
+      <img src="./media/descargar-app.png" alt="Ovalo gris con el logo de apple y android para descargar la applicacion.">
+    </section>
 
   <!-- INFORMACION -->
   <section class="container contenedor">
-    <div class="row informacion">
-      <div class="col-sm-12 col-lg-6">
-        <img src="media/muestra1.png" alt="Muestra 1">
+    <div class="row col-12 informacion">
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <img src="media/muestra1.png" alt="Muestra de la seccion para profesionales. Una tabla con 5 columnas y varios turnos agendados.">
       </div>
-      <div class="col-sm-12 col-lg-6 texto">
+      <div class="col-sm-12 col-md-12 col-lg-6 texto">
         <h3>Experiencia Premium</h3>
         <p>Disfrutá de un servicio de barbería moderno, con profesionales de primera y un ambiente pensado para vos.</p>
       </div>
     </div>
-  </section>
-
-  <!-- INFORMACION -->
-  <section class="container contenedor">
-    <div class="row informacion muestra2">
-      <div class="col-sm-12 col-lg-6">
-        <img src="media/muestra2.png"alt="Muestra 2">
+    <div class="row col-12 informacion muestra2">
+      <div class="col-sm-12 col-md 12 col-lg-6">
+        <img src="media/muestra2.png"alt="Muestra de la seccion de salones para elegir.">
       </div>
-      <div class="col-sm-12 col-lg-6 texto">
+      <div class="col-sm-12 col-md-12 col-lg-6 texto">
         <h3>Tu estilo, tu identidad</h3>
         <p>Desde un look relajado hasta el más prolijo: encontrá el estilo que mejor se adapta a vos con nuestros expertos.</p>
       </div>
@@ -123,87 +116,82 @@
   <section class="container contenedor testimonios">
     <h2 class="col-12">Testimonios</h2>
     <div class="row">
-      
-      <div class="col-sm-12 col-lg-3 testimonios-card">
+      <div class="col-sm-12 col-md-3 col-lg-3 testimonios-card">
         <div class="card h-100 shadow">
-          <img src="media/cliente1.jpg" class="card-img-top" alt="Cliente 1">
+          <img src="media/cliente1.jpg" class="card-img-top" alt="Hombre con rulos y barba de largo medio">
           <div class="card-body">
-            <h5 class="card-title">Facundo</h5>
+            <h3 class="card-title">Facundo</h3>
             <p class="text-start">⭐⭐⭐⭐⭐</p>
             <p class="card-text">“Es muy intuitiva, a mis clientes les encanta.”</p>
           </div>
         </div>
       </div>
-      
-      <div class="col-sm-12 col-lg-3 testimonios-card">
+      <div class="col-sm-12 col-md-3 col-lg-3 testimonios-card">
         <div class="card h-100 shadow">
-          <img src="media/cliente2.jpg" class="card-img-top" alt="Cliente 2">
+          <img src="media/cliente2.jpg" class="card-img-top" alt="Hombre con pelo largo atado y barba larga">
           <div class="card-body">
-            <h5 class="card-title">David</h5>
+            <h3 class="card-title">David</h3>
             <p class="text-start">⭐⭐⭐⭐☆</p>
             <p class="card-text">“Me ahorra mucho tiempo y es facil de usar.”</p>
           </div>
         </div>
       </div>
-      
-      <div class="col-sm-12 col-lg-3 testimonios-card">
+      <div class="col-sm-12 col-md-3 col-lg-3 testimonios-card">
         <div class="card h-100 shadow">
-          <img src="media/cliente3.jpg" class="card-img-top" alt="Cliente 3">
+          <img src="media/cliente3.jpg" class="card-img-top" alt="Hombre peinado hacia atras con barba corta">
           <div class="card-body">
-            <h5 class="card-title">Federico</h5>
+            <h3 class="card-title">Federico</h3>
             <p class="text-start">⭐⭐⭐⭐⭐</p>
             <p class="card-text">“Super práctica, me encanta.”</p>
           </div>
         </div>
       </div>
-
-      <div class="col-sm-12 col-lg-3 testimonios-card">
+      <div class="col-sm-12 col-md-3 col-lg-3 testimonios-card">
         <div class="card h-100 shadow">
-          <img src="media/cliente4.jpg" class="card-img-top" alt="Cliente 3">
+          <img src="media/cliente4.jpg" class="card-img-top" alt="Hombre peinado hacia arriba y con barba corta">
           <div class="card-body">
-            <h5 class="card-title">Mariano</h5>
+            <h3 class="card-title">Mariano</h3>
             <p class="text-start">⭐⭐⭐⭐⭐</p>
             <p class="card-text">“Exelente servicio.”</p>
           </div>
         </div>
       </div>
-    
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <section class="container-fluid">
+    <section class="container-fluid footer-mbl">
       <div class="row justify-content-center">
-        <div class="logo-footer col col-sm-3 col-lg-3">
-            <a class="row" href="#"><img src="./media/logo.png" alt="logo"></a>
-            <a class="row" href=""><img src="./media/descargar-footer.png" alt="Descargar App"></a>
+        <div class="logo-footer col col-md-3 col-lg-3">
+          <a class="row" href="#"><img src="./media/logo-blanco.png" alt="Logo. Una agenda con una tijera."></a>
+          <a class="row" href=""><img src="./media/descargar-footer.png" alt="Ovalo gris con el logo de apple y android para descargar la applicacion."></a>
         </div>
-        <div class="categoria col col-sm-3 col-lg-3">
-            <h3>Acerca de</h3>
-              <ul>
-                <li><a href="./page/footer/trabajo.html">Trabaja con nosotros</a></li>
-                <li><a href="./page/footer/como-usar.html">Como usar</a></li>
-                <li><a href="./page/footer/acerca-de.html">Nosotros</a></li>
-              </ul>
+        <div class="categoria col col-sm-4 col-md-3 col-lg-3">
+          <h3>Acerca de</h3>
+          <ul>
+            <li><a href="./page/footer/trabajo.html">Trabaja con nosotros</a></li>
+            <li><a href="./page/footer/como-usar.html">Como usar</a></li>
+            <li><a href="./page/footer/acerca-de.html">Nosotros</a></li>
+          </ul>
         </div>
-        <div class="categoria col col-sm-3 col-lg-3">
-            <h3>Informacion legal</h3>
-              <ul>
-                <li><a href="./page/footer/politicas-de-privacidad.html">Politicas de privacidad</a></li>
-                <li><a href="./page/footer/terminos-y-condiciones.html">Terminos y condiciones</a></li>
-              </ul>
+        <div class="categoria col col-sm-4 col-md-3 col-lg-3">
+          <h3>Informacion legal</h3>
+          <ul>
+            <li><a href="./page/footer/politicas-de-privacidad.html">Politicas de privacidad</a></li>
+            <li><a href="./page/footer/terminos-y-condiciones.html">Terminos y condiciones</a></li>
+          </ul>
         </div>
-        <div class="categoria col col-sm-3 col-lg-3">
-            <h3>Contacto</h3>
-              <ul>
-                <li><a href="./page/footer/atencion-al-cliente.html">Atencion al cliente</a></li>
-                <li><a href="./page/footer/dejanos-tu-consulta.html">Dejanos tu consulta</a></li>
-              </ul>
+        <div class="categoria col col-sm-4 col-md-3 col-lg-3">
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="./page/footer/atencion-al-cliente.html">Atencion al cliente</a></li>
+            <li><a href="./page/footer/dejanos-tu-consulta.html">Dejanos tu consulta</a></li>
+          </ul>
         </div>
-        </div>
+      </div>
     </section>
-    </footer>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,33 +1,53 @@
+@use "variables" as*;
+
 /*--- NAVBAR ---*/
 
-.navbar{
-    background-color: #2129a5;
+.mi-navbar{
+    background-color: $gris;
+    li{
+        a{
+        color: $beige;
+        font-size: 16px;
+        &:hover{
+            color: $verde;
+        }
+        }
+    }
+    
     img{
+        max-height: 100%;
         padding-left: 1.5rem
     }
 }
 
+#activo{
+    color: $verde;
+}
+
+
 /*--- FOOTER ---*/
 
 footer{
-    background-color: #2129a5;
+    background-color: $gris;
     height: 10rem;
-    font-size: 15px;
     section{
         padding-top: 1.5rem;
         h3{
-        font-size: 21px;
-        color:#fff
+        font-size: 18px;
+        font-weight: 400;
+        color: $beige;
         }
         ul{
             list-style: none;
             padding: 0;
+            a{
+                color: $beige;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 250;
         }
-        a{
-        color: #fff;
-        text-decoration: none;
-        list-style: none;
         }
+        
     }
     
 }
@@ -39,5 +59,7 @@ footer{
     padding-left: 3rem;
     img{
         width: 10rem;
+        margin: .5rem;
+        margin-top: 0;
     }
 }
