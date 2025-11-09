@@ -425,6 +425,25 @@ body {
   list-style: disc;
 }
 
+.redes {
+  margin: auto;
+  margin-top: 7rem;
+}
+.redes ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+.redes ul li a img {
+  max-width: 80%;
+  transition: 0.3s ease-in-out 0s;
+}
+.redes ul li a img:hover {
+  transform: scale(1.1);
+}
+
 .plan {
   height: 32rem;
 }

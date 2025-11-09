@@ -1,0 +1,25 @@
+@use "variables" as*;
+
+.redes{
+    margin: auto;
+    margin-top: 7rem;
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        li{
+            a{
+                img{
+                max-width: 80%;
+                transition: .3s ease-in-out 0s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                }
+            }
+            
+        }
+    }
+}
