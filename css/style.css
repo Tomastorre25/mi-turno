@@ -429,18 +429,11 @@ body {
   margin: auto;
   margin-top: 7rem;
 }
-.redes ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-}
-.redes ul li a img {
+.redes a img {
   max-width: 80%;
   transition: 0.3s ease-in-out 0s;
 }
-.redes ul li a img:hover {
+.redes a img:hover {
   transform: scale(1.1);
 }
 
@@ -631,6 +624,10 @@ body {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+  /*----- ATENCION AL CLIENTE -----*/
+  .redes a img {
+    max-width: 100%;
   }
 }
 /*----- DESKTOP -----*/
